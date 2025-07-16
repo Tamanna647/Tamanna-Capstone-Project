@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+    <listeners>
+        <listener class-name="ListenerUtility.ExtentITestNGListeners"/>
+        
+    </listeners>
+
+    <test thread-count="1" name="API_Tests"> <!-- thread-count=1 to preserve order -->
+        <classes>
+            <class name="Project1_Telecom.addUser_1Post"/>
+            <class name="Project1_Telecom.login_4POST"/>
+            <class name="Project1_Telecom.getUserProfile_2Get"/>
+            <class name="Project1_Telecom.update_3Patch"/>
+            <class name="Project1_Telecom.addContact_5POST"/>
+            <class name="Project1_Telecom.contactList_6GET"/>
+            <class name="Project1_Telecom.contact_7GET"/>
+            <class name="Project1_Telecom.update_8PUT"/>
+            <class name="Project1_Telecom.update_9PATCH"/>
+            <class name="Project1_Telecom.logoutuser_10POST"/>
+        </classes>
+    </test>
+</suite>

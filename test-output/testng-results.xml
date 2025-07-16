@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-16T20:50:37 IST" name="Suite1" finished-at="2025-07-16T20:50:58 IST" duration-ms="21439">
+    <groups>
+    </groups>
+    <test started-at="2025-07-16T20:50:37 IST" name="API_Tests" finished-at="2025-07-16T20:50:58 IST" duration-ms="21439">
+      <class name="Project1_Telecom.logoutuser_10POST">
+        <test-method signature="logoutUser()[pri:0, instance:Project1_Telecom.logoutuser_10POST@64b0598]" started-at="2025-07-16T20:50:57 IST" name="logoutUser" finished-at="2025-07-16T20:50:58 IST" depends-on-methods="Project1_Telecom.update_9PATCH.updatePartialContact" duration-ms="1641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutUser -->
+      </class> <!-- Project1_Telecom.logoutuser_10POST -->
+      <class name="Project1_Telecom.update_8PUT">
+        <test-method signature="updateFullContact()[pri:0, instance:Project1_Telecom.update_8PUT@24105dc5]" started-at="2025-07-16T20:50:54 IST" name="updateFullContact" finished-at="2025-07-16T20:50:55 IST" depends-on-methods="Project1_Telecom.contact_7GET.getSingleContact" duration-ms="1633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateFullContact -->
+      </class> <!-- Project1_Telecom.update_8PUT -->
+      <class name="Project1_Telecom.update_9PATCH">
+        <test-method signature="updatePartialContact()[pri:0, instance:Project1_Telecom.update_9PATCH@5167f57d]" started-at="2025-07-16T20:50:55 IST" name="updatePartialContact" finished-at="2025-07-16T20:50:57 IST" depends-on-methods="Project1_Telecom.update_8PUT.updateFullContact" duration-ms="1646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePartialContact -->
+      </class> <!-- Project1_Telecom.update_9PATCH -->
+      <class name="Project1_Telecom.getUserProfile_2Get">
+        <test-method signature="getUserProfile()[pri:0, instance:Project1_Telecom.getUserProfile_2Get@3e78b6a5]" started-at="2025-07-16T20:50:43 IST" name="getUserProfile" finished-at="2025-07-16T20:50:44 IST" depends-on-methods="Project1_Telecom.addUser_1Post.addUser" duration-ms="1563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserProfile -->
+      </class> <!-- Project1_Telecom.getUserProfile_2Get -->
+      <class name="Project1_Telecom.contact_7GET">
+        <test-method signature="getSingleContact()[pri:0, instance:Project1_Telecom.contact_7GET@2438dcd]" started-at="2025-07-16T20:50:52 IST" name="getSingleContact" finished-at="2025-07-16T20:50:54 IST" depends-on-methods="Project1_Telecom.addContact_5POST.addContact" duration-ms="1529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleContact -->
+      </class> <!-- Project1_Telecom.contact_7GET -->
+      <class name="Project1_Telecom.update_3Patch">
+        <test-method signature="updateUser()[pri:0, instance:Project1_Telecom.update_3Patch@769a1df5]" started-at="2025-07-16T20:50:44 IST" name="updateUser" finished-at="2025-07-16T20:50:47 IST" depends-on-methods="Project1_Telecom.addUser_1Post.addUser" duration-ms="2258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+      </class> <!-- Project1_Telecom.update_3Patch -->
+      <class name="Project1_Telecom.login_4POST">
+        <test-method signature="loginUser()[pri:0, instance:Project1_Telecom.login_4POST@60db1c0e]" started-at="2025-07-16T20:50:47 IST" name="loginUser" finished-at="2025-07-16T20:50:48 IST" depends-on-methods="Project1_Telecom.update_3Patch.updateUser" duration-ms="1745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+      </class> <!-- Project1_Telecom.login_4POST -->
+      <class name="Project1_Telecom.addContact_5POST">
+        <test-method signature="addContact()[pri:0, instance:Project1_Telecom.addContact_5POST@41f69e84]" started-at="2025-07-16T20:50:48 IST" name="addContact" finished-at="2025-07-16T20:50:50 IST" depends-on-methods="Project1_Telecom.login_4POST.loginUser" duration-ms="1753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContact -->
+      </class> <!-- Project1_Telecom.addContact_5POST -->
+      <class name="Project1_Telecom.addUser_1Post">
+        <test-method signature="addUser()[pri:0, instance:Project1_Telecom.addUser_1Post@730d2164]" started-at="2025-07-16T20:50:37 IST" name="addUser" finished-at="2025-07-16T20:50:43 IST" duration-ms="5655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+      </class> <!-- Project1_Telecom.addUser_1Post -->
+      <class name="Project1_Telecom.contactList_6GET">
+        <test-method signature="getContactList()[pri:0, instance:Project1_Telecom.contactList_6GET@7975d1d8]" started-at="2025-07-16T20:50:50 IST" name="getContactList" finished-at="2025-07-16T20:50:52 IST" depends-on-methods="Project1_Telecom.login_4POST.loginUser" duration-ms="1900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getContactList -->
+      </class> <!-- Project1_Telecom.contactList_6GET -->
+    </test> <!-- API_Tests -->
+  </suite> <!-- Suite1 -->
+</testng-results>
