@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OrangeHRM1 Suite">
+    <listeners>
+        <listener class-name="listeners.ExtentTestNGListener" />
+    </listeners>
+
+    <test name="LoginTests">
+        <classes>
+            <class name="tests.OrangeHRM_LoginTest"/>
+        </classes>
+    </test>
+</suite>

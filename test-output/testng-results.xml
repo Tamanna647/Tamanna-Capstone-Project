@@ -1,71 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T20:50:37 IST" name="Suite1" finished-at="2025-07-16T20:50:58 IST" duration-ms="21439">
+  <suite started-at="2025-07-17T20:41:56 IST" name="OrangeHRM1 Suite" finished-at="2025-07-17T20:43:25 IST" duration-ms="88953">
     <groups>
     </groups>
-    <test started-at="2025-07-16T20:50:37 IST" name="API_Tests" finished-at="2025-07-16T20:50:58 IST" duration-ms="21439">
-      <class name="Project1_Telecom.logoutuser_10POST">
-        <test-method signature="logoutUser()[pri:0, instance:Project1_Telecom.logoutuser_10POST@64b0598]" started-at="2025-07-16T20:50:57 IST" name="logoutUser" finished-at="2025-07-16T20:50:58 IST" depends-on-methods="Project1_Telecom.update_9PATCH.updatePartialContact" duration-ms="1641" status="PASS">
+    <test started-at="2025-07-17T20:41:56 IST" name="LoginTests" finished-at="2025-07-17T20:43:25 IST" duration-ms="88953">
+      <class name="tests.OrangeHRM_LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:41:57 IST" name="setUp" finished-at="2025-07-17T20:42:10 IST" duration-ms="12381" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutUser -->
-      </class> <!-- Project1_Telecom.logoutuser_10POST -->
-      <class name="Project1_Telecom.update_8PUT">
-        <test-method signature="updateFullContact()[pri:0, instance:Project1_Telecom.update_8PUT@24105dc5]" started-at="2025-07-16T20:50:54 IST" name="updateFullContact" finished-at="2025-07-16T20:50:55 IST" depends-on-methods="Project1_Telecom.contact_7GET.getSingleContact" duration-ms="1633" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginLogoutTest(java.lang.String,java.lang.String)[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:10 IST" name="loginLogoutTest" data-provider="loginData" finished-at="2025-07-17T20:42:19 IST" duration-ms="8958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateFullContact -->
-      </class> <!-- Project1_Telecom.update_8PUT -->
-      <class name="Project1_Telecom.update_9PATCH">
-        <test-method signature="updatePartialContact()[pri:0, instance:Project1_Telecom.update_9PATCH@5167f57d]" started-at="2025-07-16T20:50:55 IST" name="updatePartialContact" finished-at="2025-07-16T20:50:57 IST" depends-on-methods="Project1_Telecom.update_8PUT.updateFullContact" duration-ms="1646" status="PASS">
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:19 IST" name="tearDown" finished-at="2025-07-17T20:42:19 IST" duration-ms="389" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updatePartialContact -->
-      </class> <!-- Project1_Telecom.update_9PATCH -->
-      <class name="Project1_Telecom.getUserProfile_2Get">
-        <test-method signature="getUserProfile()[pri:0, instance:Project1_Telecom.getUserProfile_2Get@3e78b6a5]" started-at="2025-07-16T20:50:43 IST" name="getUserProfile" finished-at="2025-07-16T20:50:44 IST" depends-on-methods="Project1_Telecom.addUser_1Post.addUser" duration-ms="1563" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:19 IST" name="setUp" finished-at="2025-07-17T20:42:25 IST" duration-ms="6348" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUserProfile -->
-      </class> <!-- Project1_Telecom.getUserProfile_2Get -->
-      <class name="Project1_Telecom.contact_7GET">
-        <test-method signature="getSingleContact()[pri:0, instance:Project1_Telecom.contact_7GET@2438dcd]" started-at="2025-07-16T20:50:52 IST" name="getSingleContact" finished-at="2025-07-16T20:50:54 IST" depends-on-methods="Project1_Telecom.addContact_5POST.addContact" duration-ms="1529" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginLogoutTest(java.lang.String,java.lang.String)[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:25 IST" name="loginLogoutTest" data-provider="loginData" finished-at="2025-07-17T20:42:31 IST" duration-ms="5613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getSingleContact -->
-      </class> <!-- Project1_Telecom.contact_7GET -->
-      <class name="Project1_Telecom.update_3Patch">
-        <test-method signature="updateUser()[pri:0, instance:Project1_Telecom.update_3Patch@769a1df5]" started-at="2025-07-16T20:50:44 IST" name="updateUser" finished-at="2025-07-16T20:50:47 IST" depends-on-methods="Project1_Telecom.addUser_1Post.addUser" duration-ms="2258" status="PASS">
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:31 IST" name="tearDown" finished-at="2025-07-17T20:42:31 IST" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateUser -->
-      </class> <!-- Project1_Telecom.update_3Patch -->
-      <class name="Project1_Telecom.login_4POST">
-        <test-method signature="loginUser()[pri:0, instance:Project1_Telecom.login_4POST@60db1c0e]" started-at="2025-07-16T20:50:47 IST" name="loginUser" finished-at="2025-07-16T20:50:48 IST" depends-on-methods="Project1_Telecom.update_3Patch.updateUser" duration-ms="1745" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:31 IST" name="setUp" finished-at="2025-07-17T20:42:41 IST" duration-ms="9174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginUser -->
-      </class> <!-- Project1_Telecom.login_4POST -->
-      <class name="Project1_Telecom.addContact_5POST">
-        <test-method signature="addContact()[pri:0, instance:Project1_Telecom.addContact_5POST@41f69e84]" started-at="2025-07-16T20:50:48 IST" name="addContact" finished-at="2025-07-16T20:50:50 IST" depends-on-methods="Project1_Telecom.login_4POST.loginUser" duration-ms="1753" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginLogoutTest(java.lang.String,java.lang.String)[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:41 IST" name="loginLogoutTest" data-provider="loginData" finished-at="2025-07-17T20:42:47 IST" duration-ms="6759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ishu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addContact -->
-      </class> <!-- Project1_Telecom.addContact_5POST -->
-      <class name="Project1_Telecom.addUser_1Post">
-        <test-method signature="addUser()[pri:0, instance:Project1_Telecom.addUser_1Post@730d2164]" started-at="2025-07-16T20:50:37 IST" name="addUser" finished-at="2025-07-16T20:50:43 IST" duration-ms="5655" status="PASS">
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:47 IST" name="tearDown" finished-at="2025-07-17T20:42:48 IST" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUser -->
-      </class> <!-- Project1_Telecom.addUser_1Post -->
-      <class name="Project1_Telecom.contactList_6GET">
-        <test-method signature="getContactList()[pri:0, instance:Project1_Telecom.contactList_6GET@7975d1d8]" started-at="2025-07-16T20:50:50 IST" name="getContactList" finished-at="2025-07-16T20:50:52 IST" depends-on-methods="Project1_Telecom.login_4POST.loginUser" duration-ms="1900" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:48 IST" name="setUp" finished-at="2025-07-17T20:42:54 IST" duration-ms="6541" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getContactList -->
-      </class> <!-- Project1_Telecom.contactList_6GET -->
-    </test> <!-- API_Tests -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- setUp -->
+        <test-method signature="loginLogoutTest(java.lang.String,java.lang.String)[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:42:54 IST" name="loginLogoutTest" data-provider="loginData" finished-at="2025-07-17T20:43:03 IST" duration-ms="8639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:43:03 IST" name="tearDown" finished-at="2025-07-17T20:43:03 IST" duration-ms="415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:43:03 IST" name="setUp" finished-at="2025-07-17T20:43:16 IST" duration-ms="12928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginLogoutTest(java.lang.String,java.lang.String)[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:43:16 IST" name="loginLogoutTest" data-provider="loginData" finished-at="2025-07-17T20:43:24 IST" duration-ms="8078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OrangeHRM_LoginTest@54e041a4]" started-at="2025-07-17T20:43:24 IST" name="tearDown" finished-at="2025-07-17T20:43:25 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.OrangeHRM_LoginTest -->
+    </test> <!-- LoginTests -->
+  </suite> <!-- OrangeHRM1 Suite -->
 </testng-results>
